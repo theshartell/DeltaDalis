@@ -30,6 +30,59 @@ h1{
     margin-top: 10px;
 }
 
+/* --- 1. ANA KAPSAYICI (Çok Önemli) --- */
+.acilir-menu {
+    position: relative; /* Alt menünün bu elemana göre hizalanmasını sağlar */
+    display: inline-block;
+}
+
+/* Ana link (Sayfalar yazısı) üzerine gelince cursor'ın el işareti olması için */
+.ana-link {
+    cursor: pointer;
+}
+
+/* --- 2. ALT MENÜ KUTUSU (Başlangıçta Gizli) --- */
+.alt-menu {
+    visibility: hidden; /* Tamamen gizler */
+    opacity: 0; /* Saydamlığı sıfırlar */
+    
+    position: absolute; /* Ana kapsayıcının tam altına yerleşmesi için */
+    top: 100%; /* "Sayfalar" yazısının tam bittiği yerden başlar */
+    left: 0;
+    
+    background-color: #ffffff; /* Menü arka plan rengi (Beyaz) */
+    min-width: 200px; /* Menünün genişliği */
+    border-radius: 8px; /* Köşeleri yuvarlatır */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Hoş bir gölge verir */
+    z-index: 10; /* Diğer tüm içeriklerin üstünde durmasını sağlar */
+    
+    /* Yumuşak bir açılış animasyonu */
+    transform: translateY(15px); /* Menüyü hafifçe aşağı çeker */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Alt menünün içindeki linklerin tasarımı */
+.alt-menu a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* Linklerin alt alta dizilmesini sağlar */
+    transition: background-color 0.2s ease;
+}
+
+/* Alt menüdeki linklerin üzerine gelince arka planları hafifçe değişsin */
+.alt-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* --- 3. SİHRİN GERÇEKLEŞTİĞİ YER --- */
+/* Fare ile ".acilir-menu" divinin üzerine gelindiğinde, ".alt-menu" divi görünsün */
+.acilir-menu:hover .alt-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); /* Menü yukarı doğru kayarak tam yerine oturur */
+}
+
 .navButtons{
     justify-content: center;
     align-items: center;
@@ -41,7 +94,6 @@ h1{
 }
 
 .navButtons a{
-    color: white;
     text-decoration: none;
     padding: 10px;
 }
