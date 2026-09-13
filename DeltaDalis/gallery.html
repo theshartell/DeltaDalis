@@ -2,21 +2,34 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Galeri - Delta Dalış Merkezi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Preview</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            corePlugins: {
+              preflight: false,
+            }
+          }
+        </script>
+
         <link rel="stylesheet" href="deltadalis.css">
     </head>
     <body>
         <div class="mainDiv">
-            <div class="upperDiv">
-                <div class="navDiv">
+            <div class="upperDiv" style="background-color: #083241;">
+                <div class="navDiv flex-col md:flex-row items-center">
                    <div class="imgDiv">
                         <a href="deltadalis.html">
-                            <img src="/DeltaDalis/Resimler/deltalogo.png" height="100px" width="100px">
+                            <img src="./Resimler/Logo/de5b23f1-2cd7-4b49-bea9-dc044903d26a.jpg" class="rounded-full" height="150px" width="150px">
                         </a>
                    </div>
-                   <div class="navButtons">
+                   <div class="navButtons flex flex-col md:flex-row text-center gap-4 md:ml-auto">
                         <a href="deltadalis.html" style="color: white;">Başlangıç</a>
                         <a href="about.html" style="color: white;">Hakkımızda</a>
+                        <a href="tourlist.html" style="color: white">Tur Listesi</a>
                         <div class="acilir-menu">
                             <a href="#" class="ana-link" style="color: white;">Sayfalar<span class="ok">▼</span></a>
                             <div class="alt-menu">
@@ -28,36 +41,288 @@
                    </div>
                 </div>
                 <center>
-                    <div class="upperTextDiv">
-                        <h1>Galeri</h1>
-                        <span>Etkinliklerimizden görseller</span>
+                    <div class="upperTextDiv w-full px-4">
+                        <h1 class="text-4xl md:text-7xl font-bold text-white drop-shadow-lg">Galeri</h1>
+                        <span class="text-white text-xl drop-shadow-md">Etkinliklerimizden görseller</span>
                     </div>
                 </center>
                 <br><br><br><br><br><br>
             </div>
-            <div class="secDiv">
-                <div class="secTextDiv">
-                    <h1>Maviliklerin Altından Kareler: Dalış Günlüklerimiz</h1>
-                    <br><br>
-                    <span>
+            
+            <div class="secDiv px-4 py-12">
+                <div class="secTextDiv max-w-7xl mx-auto text-center">
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Maviliklerin Altından Kareler: Dalış Günlüklerimiz</h1>
+                    <span class="text-gray-600 text-lg">
                         Gerçekleştirdiğimiz farklı su altı keşifleri ve eğitmen turları sırasında maskemize takılan anlara 
                         göz atın; bizi derinliklerdeki hikayelerimizle tanıyın.
                     </span>
-                    <br><br>
-                    .
-                    <br><br>
-                    .
-                    <br><br>
-                    .
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-12">
+                        
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/1.png" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/2.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/3.png" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/5.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/6.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/7.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/8.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/9.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/10.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/11.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/12.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/13.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/14.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/15.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/16.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/17.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/18.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/19.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/20.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/21.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/22.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/23.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/24.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/25.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/26.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/27.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/28.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/29.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/30.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/31.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/32.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/33.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/34.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/35.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/36.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/37.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/38.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/39.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/40.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/41.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/42.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/43.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/44.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/45.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/46.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/47.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/48.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/49.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <video src="./Resimler/Gallery/50.mp4#t=0.001" preload="metadata" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)"></video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <video src="./Resimler/Gallery/51.mp4#t=0.001" preload="metadata" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)"></video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <video src="./Resimler/Gallery/52.mp4#t=0.001" preload="metadata" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)"></video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/53.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <video src="./Resimler/Gallery/54.MP4#t=0.001" preload="metadata" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)"></video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/55.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <video src="./Resimler/Gallery/56.mp4#t=0.001" preload="metadata" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)"></video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/57.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/58.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <video src="./Resimler/Gallery/59.MP4#t=0.001" preload="metadata" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)"></video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <video src="./Resimler/Gallery/60.MP4#t=0.001" preload="metadata" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)"></video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/61.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/62.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/63.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/64.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/65.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/66.jpg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/67.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/68.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/69.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="overflow-hidden rounded-xl shadow-lg">
+                            <img src="./Resimler/Gallery/70.jpeg" class="w-full h-48 md:h-64 object-cover cursor-pointer hover:scale-110 transition-transform duration-500" onclick="openLightbox(this.src)">
+                        </div>
+                        
+                    </div>
+
                 </div>
             </div>
-            <div class="fourthDiv">
-                <h1>Sana En Uygun Etkinliği Seç</h1>
-                <span>
-                    İlk dalıştn profesyonel turlara kadar uzanan zengin programlarımızı inceleyin, 
+            
+            <div class="fourthDiv bg-[#083241] py-16 px-4 text-center">
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-6">Sana En Uygun Etkinliği Seç</h1>
+                <span class="text-gray-300 text-lg max-w-3xl mx-auto block mb-8">
+                    İlk dalıştan profesyonel turlara kadar uzanan zengin programlarımızı inceleyin, 
                     hayalinizdeki su altı rotasını hemen bulun.
                 </span>
+                <a href="tourlist.html" class="inline-block bg-blue-500 hover:bg-black text-white font-bold py-3 px-8 rounded-xl transition duration-300 shadow-md" style="text-decoration: none;">Turları İncele</a>
             </div>
         </div>
+
+        <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden flex justify-center items-center opacity-0 transition-opacity duration-300">
+            <span class="absolute top-5 right-8 text-white text-5xl cursor-pointer hover:text-gray-300 z-50" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" class="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl hidden">
+            <video id="lightbox-video" class="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl hidden" controls playsinline></video>
+        </div>
+
+        <script>
+            function openLightbox(src) {
+                const lightbox = document.getElementById('lightbox');
+                const img = document.getElementById('lightbox-img');
+                const video = document.getElementById('lightbox-video');
+                
+                const isVideo = src.toLowerCase().includes('.mp4') || src.toLowerCase().includes('.mov');
+                
+                if (isVideo) {
+                    img.classList.add('hidden');
+                    video.classList.remove('hidden');
+                    video.src = src;
+                    video.play();
+                } else {
+                    video.classList.add('hidden');
+                    video.pause();
+                    img.classList.remove('hidden');
+                    img.src = src;
+                }
+                
+                lightbox.classList.remove('hidden');
+                setTimeout(() => lightbox.classList.remove('opacity-0'), 10);
+            }
+
+            function closeLightbox() {
+                const lightbox = document.getElementById('lightbox');
+                const video = document.getElementById('lightbox-video');
+                
+                lightbox.classList.add('opacity-0');
+                setTimeout(() => {
+                    lightbox.classList.add('hidden');
+                    video.pause();
+                    video.src = '';
+                }, 300);
+            }
+        </script>
     </body>
 </html>
