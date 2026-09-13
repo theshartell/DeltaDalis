@@ -2,21 +2,35 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Takımımız - Delta Dalış Merkezi</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            corePlugins: {
+              preflight: false,
+            }
+          }
+        </script>
+
         <link rel="stylesheet" href="deltadalis.css">
     </head>
-    <body>
-        <div class="mainDiv">
-            <div class="upperDiv">
-                <div class="navDiv">
-                    <div class="imgDiv">
-                        <a href="deltadalis.html">
-                            <img src="/DeltaDalis/Resimler/deltalogo.png" height="100px" width="100px">
-                        </a>
-                    </div>
-                    <div class="navButtons">
+    
+    <body class="bg-slate-900 min-h-screen flex flex-col font-sans">
+        
+        <div class="upperDiv">
+            <div class="navDiv flex flex-col md:flex-row items-center pt-5">
+                <div class="imgDiv">
+                    <a href="deltadalis.html">
+                        <img src="./Resimler/Logo/de5b23f1-2cd7-4b49-bea9-dc044903d26a.jpg" class="rounded-full" height="150px" width="150px">
+                    </a>
+                </div>
+                <div class="navButtons flex flex-col md:flex-row text-center gap-4 md:ml-auto">
                         <a href="deltadalis.html" style="color: white;">Başlangıç</a>
                         <a href="about.html" style="color: white;">Hakkımızda</a>
+                        <a href="tourlist.html" style="color: white">Tur Listesi</a>
                         <div class="acilir-menu">
                             <a href="#" class="ana-link" style="color: white;">Sayfalar<span class="ok">▼</span></a>
                             <div class="alt-menu">
@@ -25,9 +39,63 @@
                                 <a href="ourteam.html">Takımımız</a>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
+            
+            <h1 class="text-white text-center text-4xl md:text-6xl font-bold mt-10 drop-shadow-lg">Maviliğin Arkasındakiler</h1>
         </div>
+
+        <div class="flex-grow flex justify-center items-center px-4 pb-16 mt-12">
+            
+            <div class="flex flex-wrap justify-center gap-8 max-w-6xl w-full">
+                
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-2xl w-full md:w-72 hover:-translate-y-2 transition-transform duration-300 border border-white/5">
+                    <img src="./Resimler/Team/Oğuz Öz.jpg" class="w-full h-72 object-cover bg-slate-700" alt="Fotoğraf 1">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Oğuz Öz</h3>
+                        <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-3">Kurucu & Başeğitmen</span>
+                        <p class="text-gray-400 text-sm">Su altı dünyasını bir yaşam biçimi olarak benimseyen kulübümüzün kurucusu Oğuz Öz, TSSF/CMAS 3 Yıldız Eğitmen unvanının yanı sıra GUE Teknik Dalgıcı ve Eğitmenidir. Sahip olduğu üstün tecrübe ve vizyonla ekibimize liderlik eden Oğuz, ilk nefesten en derin keşiflere kadar sualtındaki serüveninizin en büyük güvencesidir. Kulübümüz bünyesinde, uluslararası standartlarda ve en üst seviye emniyet kurallarıyla su altı dünyasına profesyonel kapılar aralamaya devam etmektedir. </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-2xl w-full md:w-72 hover:-translate-y-2 transition-transform duration-300 border border-white/5">
+                    <img src="./Resimler/Team/Tayfur İlkay Akyol.jpg" class="w-full h-72 object-cover bg-slate-700" alt="Fotoğraf 2">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Tayfur İlkay Akyol</h3>
+                        <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-3">Eğitmen</span>
+                        <p class="text-gray-400 text-sm">Kulübümüzün yetkin eğitmenlerinden Tayfur İlkay Akyol, TSSF/CMAS 1 Yıldız Eğitmen ve GUE Teknik Dalgıcı olarak ekibimizde görev almaktadır. Kulübümüzün değerli bir parçası olan Akyol, uluslararası standartlara ve kulübümüzün yüksek emniyet kurallarına uygun olarak, sualtı dünyasına adım atan dalgıç adaylarımızın eğitim süreçlerine destek vermekte ve rehberlik etmektedir.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-2xl w-full md:w-72 hover:-translate-y-2 transition-transform duration-300 border border-white/5">
+                    <img src="./Resimler/Team/Emre Kaan Karataş.jpg" class="w-full h-72 object-cover bg-slate-700" alt="Fotoğraf 3">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Emre Kaan Karataş</h3>
+                        <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-3">Eğitmen</span>
+                        <p class="text-gray-400 text-sm">Kulübümüz bünyesinde çalışmalarını sürdüren Emre Kaan Karataş, TSSF/CMAS 1 Yıldız Eğitmenlik unvanı, 7 yıllık dalış deneyimi ve GUE tecrübesiyle eğitim kadromuzda yer almaktadır. Kulübümüzün belirlediği üst düzey güvenlik ve kalite standartları doğrultusunda, sualtındaki ilk adımlarınızda ve temel dalış eğitimlerinizde sizlere güvenle ve keyifle eşlik etmektedir.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-2xl w-full md:w-72 hover:-translate-y-2 transition-transform duration-300 border border-white/5">
+                    <img src="./Resimler/Team/Burcu Yılmaz Öz.jpeg" class="w-full h-72 object-cover bg-slate-700" alt="Fotoğraf 4">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Burcu Yılmaz Öz</h3>
+                        <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-3">Dalgıç</span>
+                        <p class="text-gray-400 text-sm">Kulübümüzün dinamik yapısının arkasındaki isimlerden biri olan Burcu Yılmaz Öz, TSSF/CMAS 3 Yıldız Dalıcı unvanıyla ekibimizin önemli bir parçasıdır. Kulübümüz bünyesinde gerçekleştirilen tüm etkinliklerin organizasyon süreçlerinde aktif rol oynamasının yanı sıra, sosyal medya ve dijital iletişim sorumluluklarını üstlenmektedir.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-2xl w-full md:w-72 hover:-translate-y-2 transition-transform duration-300 border border-white/5">
+                    <img src="./Resimler/Team/Selahattin Karayiğit.jpeg" class="w-full h-72 object-cover bg-slate-700" alt="Fotoğraf 5">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-1">Selahattin Karayiğit</h3>
+                        <span class="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-3">Dalgıç</span>
+                        <p class="text-gray-400 text-sm">Ekibimizin en genç üyelerinden Selahattin Karayiğit, TSSF/CMAS 3 Yıldız Dalıcı ve GUE Türkiye'nin en genç dalıcısı olarak öne çıkmaktadır. Çocukluk yıllarından itibaren dalış dünyasının içinde yetişen Selahattin, üstün tekne deneyimi sayesinde dalıcılarımıza su üstü koordinasyonunda önemli rehberlik hizmeti sunmakta, aynı zamanda kulübümüzün sosyal medya faaliyetlerinde aktif rol oynamaktadır.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </body>
 </html>
