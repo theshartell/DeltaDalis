@@ -2,21 +2,34 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Delta Dalış Merkezi - Hakkımızda</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            corePlugins: {
+              preflight: false,
+            }
+          }
+        </script>
+
         <link rel="stylesheet" href="deltadalis.css">
     </head>
     <body>
         <div class="mainDiv">
-            <div class="upperDiv">
+            <div class="upperDiv" style="background-image: url(./Resimler/About\ Page/1.JPEG);">
                 <div class="navDiv">
                    <div class="imgDiv">
                         <a href="deltadalis.html">
-                            <img src="/DeltaDalis/Resimler/deltalogo.png" height="100px" width="100px">
+                            <img src="./Resimler/Logo/de5b23f1-2cd7-4b49-bea9-dc044903d26a.jpg"class="rounded-full" height="150px" width="150px">
                         </a>
                    </div>
-                   <div class="navButtons">
+                   <div class="navButtons flex flex-col md:flex-row text-center gap-4 md:ml-auto">
                         <a href="deltadalis.html" style="color: white;">Başlangıç</a>
                         <a href="about.html" style="color: white;">Hakkımızda</a>
+                        <a href="tourlist.html" style="color: white">Tur Listesi</a>
                         <div class="acilir-menu">
                             <a href="#" class="ana-link" style="color: white;">Sayfalar<span class="ok">▼</span></a>
                             <div class="alt-menu">
@@ -47,7 +60,7 @@
                 </div>
                 <div class="secMidDiv">
                     <div class="secRightDiv">
-                        <img src="https://max-themes.net/demos/zurf/zurf/images/left00-img.jpg" width="600px" height="600px">
+                        <img src="./Resimler/About Page/3.JPEG" width="600px" height="900px">
                     </div>
                     <div class="secLeftDiv">
                         <div class="firstSLeftDiv">
@@ -64,7 +77,7 @@
                             <span>✅ Tam donanımlı ve kaliteli dalış ekipmanları</span>
                             <span>✅ Güvenli ve planlı dalış organizasyonu</span>
                         </div>
-                        <a href="#" cursor="pointer"><b>Aramıza Katıl</b></a>
+                        <a href="contact.html" cursor="pointer"><b>Aramıza Katıl</b></a>
                     </div>
                 </div>
             </div>
@@ -84,12 +97,13 @@
                     deneyimleri sunan profesyonel bir tüplü dalış kulübüyüz.
                 </span>
             </div>
-            <div class="bottomDiv">
+            <div class="bottomDiv" style="background-image: url(./Resimler/About\ Page/2.jpeg);">
                 <h1>Derinliklerden Kareler</h1>
                 <span>
                     Düzenlediğimiz farklı dalış turları ve su altı keşifleri sırasında çekilen bu özel fotoğraflara göz
                     atarak bizleri daha yakından tanıyın.
                 </span>
+                <a href="gallery.html" style="background-color: darkblue; color: white; padding: 15px; border-radius: 5px; text-decoration: none;">Galerimiz</a>
             </div>
         </div>
     </body>
