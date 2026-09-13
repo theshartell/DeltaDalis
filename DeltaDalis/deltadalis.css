@@ -1,10 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .mainDiv{
     display: block;
-    flex-direction: row;
     flex-wrap: nowrap;
 }
 
@@ -13,7 +26,9 @@ h1{
 }
 
 .upperDiv{
-    background-color: #014B7D;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color:white;
     gap: 10px;
     width: 100%;
@@ -23,72 +38,62 @@ h1{
 
 .navDiv{
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     padding: 10px;
     gap: 10px;
     margin-top: 10px;
+    margin-top: 0px;
 }
 
-/* --- 1. ANA KAPSAYICI (Çok Önemli) --- */
 .acilir-menu {
-    position: relative; /* Alt menünün bu elemana göre hizalanmasını sağlar */
+    position: relative;
     display: inline-block;
 }
 
-/* Ana link (Sayfalar yazısı) üzerine gelince cursor'ın el işareti olması için */
 .ana-link {
     cursor: pointer;
 }
 
-/* --- 2. ALT MENÜ KUTUSU (Başlangıçta Gizli) --- */
 .alt-menu {
-    visibility: hidden; /* Tamamen gizler */
-    opacity: 0; /* Saydamlığı sıfırlar */
+    visibility: hidden;
+    opacity: 0;
     
-    position: absolute; /* Ana kapsayıcının tam altına yerleşmesi için */
-    top: 100%; /* "Sayfalar" yazısının tam bittiği yerden başlar */
+    position: absolute;
+    top: 100%;
     left: 0;
     
-    background-color: #ffffff; /* Menü arka plan rengi (Beyaz) */
-    min-width: 200px; /* Menünün genişliği */
-    border-radius: 8px; /* Köşeleri yuvarlatır */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Hoş bir gölge verir */
-    z-index: 10; /* Diğer tüm içeriklerin üstünde durmasını sağlar */
+    background-color: #ffffff;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 10;
     
-    /* Yumuşak bir açılış animasyonu */
-    transform: translateY(15px); /* Menüyü hafifçe aşağı çeker */
+    transform: translateY(15px);
     transition: all 0.3s ease-in-out;
 }
 
-/* Alt menünün içindeki linklerin tasarımı */
 .alt-menu a {
     color: #333333;
     padding: 12px 16px;
     text-decoration: none;
-    display: block; /* Linklerin alt alta dizilmesini sağlar */
+    display: block;
     transition: background-color 0.2s ease;
 }
 
-/* Alt menüdeki linklerin üzerine gelince arka planları hafifçe değişsin */
 .alt-menu a:hover {
     background-color: #f1f1f1;
 }
 
-/* --- 3. SİHRİN GERÇEKLEŞTİĞİ YER --- */
-/* Fare ile ".acilir-menu" divinin üzerine gelindiğinde, ".alt-menu" divi görünsün */
 .acilir-menu:hover .alt-menu {
     visibility: visible;
     opacity: 1;
-    transform: translateY(0); /* Menü yukarı doğru kayarak tam yerine oturur */
+    transform: translateY(0);
 }
 
 .navButtons{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    float: right;
-    margin-left: auto;
     margin-right: 10px;
     margin-top: 30px;
 }
@@ -176,7 +181,6 @@ h1{
 
 .secMidDiv{
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -240,8 +244,14 @@ span{
     margin-right: 10px;
 }
 
+.secRightDiv img{
+    border-radius: 5px;
+}
+
 .thirdDiv{
-    background-color: rgb(30, 113, 105);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 50px;
     text-align: center;
@@ -275,7 +285,6 @@ span{
 
 .fourthMidDiv{
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -314,6 +323,9 @@ span{
 }
 
 .bottomDiv{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -321,6 +333,7 @@ span{
     text-align: center;
     align-items: center;
     padding: 50px;
+    color: white;
 }
 
 .bottomButton1{
